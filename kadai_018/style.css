@@ -1,0 +1,31 @@
+.decoration {
+
+}
+
+
+
+#top {
+  width: 800px;
+  width: 100%;
+  background-color: #dcc9f4;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align:center;
+}
+.top-child {
+  width: 150px;
+  width: 20%;
+  background-color: #ffd9df;
+  margin: 30px auto;
+
+}
+
+
+
+
+
+
+
+
+
+
