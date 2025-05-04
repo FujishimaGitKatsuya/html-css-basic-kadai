@@ -1,11 +1,9 @@
 #top {
   width: 800px;
-  height: 25px;
   text-align:center;
   background-color: #dcc9f4;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: inline-block;
+  padding: 20px 0px 20px 0px;
+  
 } 
 .top-child {
   width: 20%;
