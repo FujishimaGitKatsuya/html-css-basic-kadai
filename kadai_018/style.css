@@ -1,6 +1,6 @@
 #top {
   width: 800px;
-  text-align:center;
+  text-align: center;
   background-color: #dcc9f4;
   padding: 20px 0px 20px 0px;
   
@@ -9,11 +9,10 @@
   width: 20%;
   display: inline-block;
   background-color: #ffd9df;
-  margin-top: auto;
-  margin-bottom: auto;
   height: 30px;
-  text-align:center;
+  text-align: center;  
 }
+
 #middle {
   width: 800px;
   height: 800px;
@@ -58,9 +57,8 @@
   width: 400px; 
   height: 100px;
   background-color: #e5dcf0;
-  position: absolute;
-  left: 0px;
-  top: 0px;
+  position: relative;
+  
   }
   #bottom-child02 {
     width: 400px; 
@@ -68,7 +66,7 @@
     background-color: #e5dcf0;
     position: relative;
     left: 200px;
-    top: 100px;
+    
     } 
     #bottom-child03 {
       width: 400px; 
@@ -76,7 +74,7 @@
       background-color: #e5dcf0;
       position: relative;
       left: 400px;
-      top: 100px;
+      
       } 
   
   
