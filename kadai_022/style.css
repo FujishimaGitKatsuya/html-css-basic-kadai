@@ -1,18 +1,21 @@
 html {
   font-size:20px;
 } 
+body {
+  margin: 0;
+}
 h1 {
   color: rgb(255, 255, 255);
   text-align: center;
   margin: 0px;
   }
 .main {
-  margin: 10px;
-  
+  padding: 10px;
   } 
  #parent {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+      
   }
 h2 {
   text-align: center;
@@ -25,27 +28,30 @@ h2::before {
 } 
 p:nth-of-type(2)::first-letter {
   color: rgb(97,206,249);
-  font-weight:  bold;
+  font-weight: bold;
 }  
 header {
   margin-bottom: 20px;
   background-color: rgb(244,79,79);
-  text-align: center; 
+  align-items: center; 
 }
 
-img {
+.contents {
+    border: 3px solid rgb(238, 204, 204);
+    flex-basis: 25%;
+    padding: 10px 15px;
+    margin: 20px 0px;  
+    text-align: center;
+    align-items: center;
+    margin:0 auto;
+    margin-bottom: 20px;
+
+}
+.contents img{
   width: 70%;
   align-items: center;
   margin: 10px 0px; 
 }
-.contents {
-    border: 3px solid rgb(238, 204, 204);
-    flex-basis:25% ;
-    padding: 10px 15px;
-    margin:20px 0;  
-    text-align: center;
- }
-  
 .contents p{
   margin: 0px; 
   align-items: center;
@@ -54,10 +60,10 @@ footer {
  background-color: rgb(244,79,79);
  text-align: center; 
 }
-footer a{
+a {
  color: rgb(255,255,255);
 }
-a:link {
+a:visited {
  color: rgb(193,234,251);
 }
 a:hover {
@@ -71,6 +77,6 @@ a:hover {
     font-size: 25px;
   }
   #parent {
-    display: block;
+    flex-direction:column;
   }
   }
