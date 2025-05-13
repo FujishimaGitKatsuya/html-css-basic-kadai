@@ -1,82 +1,113 @@
-html {
-  font-size:20px;
-} 
-body {
+/* Step3: スタイルの下準備 */
+body, h1, p {
   margin: 0;
 }
-h1 {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  margin: 0px;
-  }
-.main {
-  padding: 10px;
-  } 
- #parent {
-      display: flex;
-      justify-content: space-between;
-      
-  }
-h2 {
-  text-align: center;
-  font-size: 25px;
-  border-bottom: dotted 3px rgb(236,122,122)
-} 
-h2::before {
-  content: "●";
-  color: rgb(239,111,139);
-} 
-p:nth-of-type(2)::first-letter {
-  color: rgb(97,206,249);
-  font-weight: bold;
-}  
+
+p, a {
+  font-size: 20px;
+}
+
+.container {
+  border: 1px solid lightgray; /* 薄いグレーの線 */
+  padding: 1px;
+  margin: 10px; /* ページの端からの余白 */
+}
+
+/* Step4: header部分のスタイル */
 header {
   margin-bottom: 20px;
-  background-color: rgb(244,79,79);
-  align-items: center; 
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+}
+
+/* Step5: main部分のスタイル */
+main {
+  padding: 10px;
+}
+
+#parent {
+  display: flex;
+  justify-content: space-between;
 }
 
 .contents {
-    border: 3px solid rgb(238, 204, 204);
-    flex-basis: 25%;
-    padding: 10px 15px;
-    margin: 20px 0px;  
-    text-align: center;
-    align-items: center;
-    margin:0 auto;
-    margin-bottom: 20px;
+  border: 3px solid rgb(238, 204, 204);
+  flex-basis: 25%;
+  padding: 10px 15px;
+  margin: 20px 0;
+  text-align: center;
+}
 
+.contents h2 {
+  font-size: 25px;
+  border-bottom: 3px dashed rgb(236, 122, 122);
+  /* フレックスボックスを使用し中央揃え */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.contents img{
+
+.contents h2::before {
+  content: "●";
+  color: rgb(239, 111, 139);
+  margin-right: 0.5em; /* 「●」とテキストの間のスペース */
+}
+
+.contents p:nth-of-type(2)::first-letter {
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+}
+
+.contents img {
+  margin: 10px 0;
   width: 70%;
-  align-items: center;
-  margin: 10px 0px; 
 }
-.contents p{
-  margin: 0px; 
-  align-items: center;
-}
+
+/* Step6: フッター部分のスタイル */
 footer {
- background-color: rgb(244,79,79);
- text-align: center; 
+  background-color: rgb(244, 79, 79);
+  text-align: center;
 }
-a:link{
- color: rgb(255,255,255);
+
+footer a {
+  color: rgb(255, 255, 255);
+  text-decoration: underline; /* ここでアンダーラインを追加 */
 }
-a:visited {
- color: rgb(193,234,251);
+
+/* リンクの状態に応じた疑似クラスで装飾 */
+footer a:link {
+  color: rgb(255, 255, 255);
 }
-a:hover {
- color: rgb(245, 178, 168);
- }
-@media screen and (max-width: 768px){
-  h2 {
+
+footer a:visited {
+  color: rgb(193, 234, 251);
+}
+
+footer a:hover {
+  color: rgb(245, 178, 168);
+  text-decoration: none; /* ホバーでアンダーラインを消す */
+}
+
+footer a:active {
+  color: rgb(244, 79, 79);
+  text-decoration: underline;
+}
+
+/* Step7: レスポンシブ対応のスタイル */
+@media (max-width: 768px) {
+  #parent {
+    flex-direction: column;
+  }
+  
+  .contents h2 {
     font-size: 30px;
   }
-  p {
+  
+  .contents p {
     font-size: 25px;
   }
-  #parent {
-    flex-direction:column;
-  }
-  }
+}
